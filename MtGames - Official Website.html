@@ -1,0 +1,123 @@
+<html>
+
+        <head>
+                <title>MtGames - Official Website</title>
+                
+                
+                <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+                        
+                             <h1 style="color: rgb(51, 141, 93); font-size: 60px; cursor: pointer">MtGames - Official Website</h1>
+                            <hr>
+                             <h2>Games:</h2>
+
+                        <ul>
+                            <li id="TerraPongTitel"><b>TerraPong</b></li>
+                            <img src="https://previews.dropbox.com/p/thumb/ABLzOLet6txp5hOcogJhXqCEpvcM-TBKc0YQH2jm3i-z6ceeCOsVgSRFoEeDS-uYj-CskXtLCgWE_BYX7bXeuvTK27NgpKoXEhTZKXsg_QNlgRdoWLuksPmUlniuz4OKwYl5l6Klvf5N_lINh98lo0H9Pgoq0GbESfJpbA0HRpWGfL77V5drOKd38-u7joOQa5Pmu3BPBCnI3nRM27tA2ocohdYsFOozB9Eo9lLHGNjsSu3MTJFBtUyjI0OyoAKcSrQUISscasDRvvAG3uo-n0j1MiOgk7mXkRPphtXcsdx49XNAzHhktrX5zBvqZD5xQ0PtIlOSWVkFqc4m2nA3txJW_Dqej6Bd6Gf15aZpneBVXg/p.jpeg?size=2048x1536&size_mode=3" alt="TerraPong" style="height: 85px;">
+                            
+                            <br>
+
+                            <a href="https://www.dropbox.com/s/uhac97uuzfxjqea/TerraPong%20v.0.6%20%2816.01.2021%29.apk?dl=0">Download TerraPong - demo v.0.6</a>
+                            
+                            <br>
+
+                            <h3 id="Cost"></h3>
+                        </ul>
+
+                            <br>
+
+                            <hr>    
+                            <h2>Social Media:</h2>
+                        <ul>
+                            <li> <a title="TerraPong on Instagram" href="https://www.instagram.com/terrapong_mtgames/?hl=de">Instagram</a> </li>
+                        </ul>
+
+
+                        <script>
+
+                            float = TerraPongKosten = 0.05; 
+                             document.getElementById("Cost").innerHTML = "Price: " + TerraPongKosten + "€";       
+
+                        </script>
+
+                        <br>
+
+                        <h2 id="a1">0</h2>   <h2 id="b2">0</h2>   <h2 id="c3">0</h2>   <h2 id="d4">0</h2>
+
+                        <br>
+
+                        <button onclick="a1Ersetzen()">1</button>  <button onclick="b2Ersetzen()">2</button>  <button onclick="c3Ersetzen()">3</button>  <button onclick="d4Ersetzen()">4</button> <button onclick="reset()">Reset</button> <button onclick="ok()">OK</button>
+
+                        <script>
+                            int = aa = 0;
+                            int = bb = 0;
+                            int = cc = 0;
+                            int = dd = 0;
+
+                             function a1Ersetzen() {
+                                 aa++;
+                             document.getElementById("a1").innerHTML = aa;       
+                             }
+
+                             function b2Ersetzen() {
+                                 bb++;
+                             document.getElementById("b2").innerHTML = bb;       
+                             }
+
+                             function c3Ersetzen() {
+                                 cc++;
+                             document.getElementById("c3").innerHTML = cc;       
+                             }
+
+                             function d4Ersetzen() {
+                                 dd++;
+                             document.getElementById("d4").innerHTML = dd;       
+                             }
+
+                             function reset() {
+                             int = aa = 0;
+                             int = bb = 0;
+                             int = cc = 0;
+                             int = dd = 0;
+                             
+                             document.getElementById("a1").innerHTML = aa;
+                             document.getElementById("b2").innerHTML = bb;
+                             document.getElementById("c3").innerHTML = cc;
+                             document.getElementById("d4").innerHTML = dd;
+                             document.getElementById("Cost").innerHTML = "Price: " + TerraPongKosten + "€"; 
+                             }
+
+                             function ok() {
+                             
+                                if (aa == 1 && bb == 9 && cc == 9 && dd == 9){
+                                    document.getElementById("Cost").innerHTML = "Mert, Sie sind VIP, Sie kriegen es Kostenlos";
+                                }
+                                
+                            ////////////////////////////////////////////////////////////////////////////////////////////////////
+                                else if (aa == 1 && bb == 9 && cc == 9 && dd == 7){
+                                    document.getElementById("Cost").innerHTML = "Onur, Sie sind VIP, Sie kriegen es Kostenlos";
+                                }
+                            ////////////////////////////////////////////////////////////////////////////////////////////////////
+                                else{
+                             int = aa = 0;
+                             int = bb = 0;
+                             int = cc = 0;
+                             int = dd = 0;
+                             
+                             document.getElementById("a1").innerHTML = aa;
+                             document.getElementById("b2").innerHTML = bb;
+                             document.getElementById("c3").innerHTML = cc;
+                             document.getElementById("d4").innerHTML = dd;
+                             document.getElementById("Cost").innerHTML = "Price: " + TerraPongKosten + "€"; 
+                                }
+            
+                             }
+
+                        </script>
+
+                </body>
+
+
+
+        </head>
+</html>
